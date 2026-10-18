@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casa Roberto · Casa boutique en Montevideo</title>
+<meta name="description" content="Casa Roberto: casa boutique restaurada en Maldonado 1159, Montevideo. Desayuno en el salón, terraza y decoración con arte y diseño. 4,5 estrellas en Google.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,700&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6F1EA;--surface:#FFFDF9;--ink:#24201B;--muted:#615A50;--accent:#3E5641;--accent-ink:#F6F1EA;--soft:#DFE5D9;--line:#E4DCD0;
+--display:"Bodoni Moda", Georgia, serif;--body:"Hanken Grotesk", system-ui, sans-serif;--r:2px;--br:2px;--dw:500;--tr:-0.01em;--h1:5.6rem}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--display);font-weight:var(--dw);line-height:1.08;letter-spacing:var(--tr)}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+body>div{overflow-x:clip}
+svg.i{width:20px;height:20px;flex:none}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border-radius:var(--br);font-weight:700;text-decoration:none;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-main{background:var(--accent);color:var(--accent-ink)}
+.btn-ghost{border:2px solid currentColor}
+.stars{color:var(--star,var(--accent));letter-spacing:2px}
+.rating{display:flex;flex-wrap:wrap;align-items:center;gap:10px;color:var(--muted);font-size:.95rem}
+.rating b{color:var(--ink)}
+.art svg{width:100%;height:auto;display:block}
+.mark{width:34px;height:34px;flex:none}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--display);font-weight:var(--dw);font-size:1.3rem;line-height:1.1}
+.kicker{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.map{background:var(--soft);overflow:hidden}
+.map iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+.hours{border-collapse:collapse;width:100%;max-width:440px}
+.hours caption{text-align:left;font-family:var(--display);font-weight:var(--dw);font-size:1.3rem;margin-bottom:8px}
+.hours th,.hours td{text-align:left;padding:8px 0;border-bottom:1px solid var(--line);font-weight:400}
+.hours th{color:var(--muted);width:45%}
+.note{display:flex;gap:10px;color:var(--muted)}
+.rows{display:grid;gap:16px;align-content:start}
+.row{display:flex;gap:12px;align-items:flex-start}
+.row a{font-weight:700}
+.float{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:50;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#fff;box-shadow:0 10px 24px -8px rgba(0,0,0,.45)}
+.float svg{width:28px;height:28px}
+.ft{padding:30px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+.ft .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+
+.ed-top{border-bottom:1px solid var(--line);background:var(--bg)}
+.ed-top .wrap{display:flex;flex-direction:column;align-items:center;gap:12px;padding-top:24px;padding-bottom:14px}
+.ed-top .logo{font-size:1.7rem}
+.ed-top ul{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 30px;list-style:none;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase}
+.ed-top nav a{text-decoration:none;color:var(--muted)}
+.ed-top nav a:hover{color:var(--ink)}
+.ed-hero{text-align:center;padding:84px 0 0}
+.ed-hero .kicker{margin-bottom:20px}
+.ed-hero h1{font-size:clamp(2.6rem,7vw,var(--h1));max-width:16ch;margin:0 auto 22px}
+.ed-hero .lead{max-width:54ch;margin:0 auto 30px;color:var(--muted);font-size:1.18rem}
+.ed-hero .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.ed-hero .rating{justify-content:center;margin-top:24px}
+.ed-band{margin-top:70px;background:var(--soft);padding:52px 0}
+.ed-band .art{width:min(400px,78%);margin:0 auto}
+.ed section{padding:100px 0}
+.ed h2{font-size:clamp(2rem,4.4vw,3rem);margin-bottom:12px;max-width:20ch}
+.ed .sub{color:var(--muted);max-width:56ch;margin-bottom:46px}
+.ed-list{list-style:none;counter-reset:n;border-top:1px solid var(--ink)}
+.ed-list li{counter-increment:n;display:grid;grid-template-columns:120px 1fr 1.2fr;gap:24px;padding:32px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.ed-list li::before{content:counter(n,decimal-leading-zero);font-family:var(--display);font-size:2.8rem;color:var(--accent);line-height:1}
+.ed-list h3{font-size:1.6rem}
+.ed-list p{color:var(--muted)}
+@media(max-width:760px){.ed-list li{grid-template-columns:60px 1fr;gap:8px 16px}.ed-list li::before{font-size:2rem;grid-row:span 2}}
+.ed-place{background:var(--surface)}
+.ed-place .cols{display:grid;grid-template-columns:1fr 1.3fr;gap:64px;align-items:start}
+.ed-place h2{position:sticky;top:30px}
+.ed-place p{margin-bottom:16px;font-size:1.13rem}
+.ed-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:72px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ed-stats div{padding:30px 20px;text-align:center}
+.ed-stats div+div{border-left:1px solid var(--line)}
+.ed-stats b{display:block;font-family:var(--display);font-size:2.4rem;font-weight:var(--dw);line-height:1.15}
+.ed-stats span{color:var(--muted);font-size:.95rem}
+@media(max-width:860px){.ed-place .cols{grid-template-columns:1fr;gap:16px}.ed-place h2{position:static}.ed-stats div+div{border-left:0;border-top:1px solid var(--line)}}
+.ed-q{text-align:center}
+.ed-q .big blockquote{font-family:var(--display);font-size:clamp(1.6rem,3.4vw,2.5rem);line-height:1.3;max-width:30ch;margin:18px auto}
+.ed-q .big figcaption{color:var(--muted)}
+.ed-more{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:32px;margin-top:60px;text-align:left;border-top:1px solid var(--line);padding-top:36px}
+.ed-more p{color:var(--muted)}
+.ed-more b{display:block;margin-top:10px;color:var(--ink);font-size:.95rem}
+.ed-contact{padding-bottom:0!important}
+.ed-mapwrap{position:relative;margin-top:44px}
+.ed-mapwrap .map,.ed-mapwrap .map iframe{height:560px}
+.ed-card{position:absolute;left:max(20px,calc((100% - 1160px)/2 + 20px));top:44px;width:min(400px,calc(100% - 40px));background:var(--surface);padding:32px;border-radius:var(--r);box-shadow:0 24px 60px -24px rgba(0,0,0,.4);display:grid;gap:20px}
+@media(max-width:760px){.ed-card{position:static;width:auto;margin:0 20px 28px;box-shadow:none;border:1px solid var(--line)}.ed-mapwrap .map,.ed-mapwrap .map iframe{height:340px}}
+.ed-close{text-align:center;padding:110px 0!important}
+.ed-close p{color:var(--muted);margin:10px auto 26px;max-width:46ch}
+.ed-close h2{margin:0 auto}
+
+.stars{--star:#A7864D}.quote{border-top-color:#A7864D}
+</style>
+</head>
+<body>
+<div class="ed">
+<header class="ed-top"><div class="wrap"><a class="logo" href="#"><svg class="mark" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="8" fill="var(--accent)"/><path d="M7 17 17 9l10 8M10 15v10h14V15" fill="none" stroke="var(--accent-ink)" stroke-width="2.4" stroke-linejoin="round"/><rect x="15" y="19" width="4" height="6" fill="var(--accent-ink)"/></svg><span>Casa Roberto</span></a><nav aria-label="Principal"><ul><li><a href="#servicios">La casa</a></li><li><a href="#lugar">El lugar</a></li><li><a href="#opiniones">Opiniones</a></li><li><a href="#contacto">Contacto</a></li></ul></nav></div></header>
+<main>
+<section class="ed-hero" style="padding-bottom:0"><div class="wrap">
+  <p class="kicker">Montevideo</p>
+  <h1>Una casa boutique con historia</h1>
+  <p class="lead">Casona restaurada y decorada con arte y diseño en Maldonado 1159. Desayuno en el salón, terraza y atención de lujo.</p>
+  <div class="cta"><a class="btn btn-main" href="tel:+59829032507"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span>Llamar para reservar</span></a><a class="btn btn-ghost" href="#contacto"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Cómo llegar</a></div>
+  <p class="rating"><span class="stars" aria-hidden="true">★★★★★</span> <span><b>4,5</b> en Google · 33 reseñas</span></p>
+</div>
+<div class="ed-band"><div class="art" aria-hidden="true"><svg viewBox="0 0 240 200"><rect x="6" y="6" width="228" height="188" rx="18" fill="var(--soft)"/><circle cx="182" cy="52" r="20" fill="var(--accent)"/><circle cx="192" cy="45" r="18" fill="var(--soft)"/><circle cx="60" cy="40" r="3" fill="var(--ink)"/><circle cx="96" cy="58" r="2.5" fill="var(--ink)"/><circle cx="136" cy="34" r="3" fill="var(--ink)"/><path d="M34 166V92M206 166v-34" stroke="var(--ink)" stroke-width="7" stroke-linecap="round"/><rect x="34" y="122" width="172" height="26" rx="6" fill="var(--surface)" stroke="var(--ink)" stroke-width="5"/><rect x="44" y="100" width="46" height="24" rx="10" fill="var(--surface)" stroke="var(--ink)" stroke-width="5"/><path d="M96 122c10-16 70-16 110 0" fill="var(--accent)" stroke="var(--ink)" stroke-width="5" stroke-linejoin="round"/><path d="M34 148h172" stroke="var(--ink)" stroke-width="5"/></svg></div></div>
+</section>
+<section id="servicios"><div class="wrap">
+  <h2>La casa</h2><p class="sub">Cada detalle está pensado.</p>
+  <ol class="ed-list"><li><h3>Desayuno en el salón</h3><p>Delicioso, servido en un salón de época.</p></li><li><h3>Terraza</h3><p>Para un mate al sol o una copa al atardecer.</p></li><li><h3>Arte y diseño</h3><p>Una casa decorada con muy buen gusto.</p></li><li><h3>Anfitriones presentes</h3><p>Atentos a lo que necesites, con recomendaciones de la ciudad.</p></li></ol>
+</div></section>
+<section id="lugar" class="ed-place"><div class="wrap">
+  <div class="cols"><h2>Más que un lugar para dormir</h2><div><p>Quienes se alojaron la describen como una experiencia estética: una casa con encanto, calidez e historia.</p><p>Estamos en Maldonado 1159, cerca de la Ciudad Vieja y de la rambla.</p></div></div>
+  <div class="ed-stats"><div><b>4,5</b><span>de puntaje en Google</span></div><div><b>Desayuno</b><span>incluido</span></div><div><b>Maldonado</b><span>1159</span></div></div>
+</div></section>
+<section id="opiniones" class="ed-q"><div class="wrap">
+  <p class="kicker">4,5 de puntaje en Google, con 33 reseñas.</p>
+  <figure class="big"><blockquote>“Si venís a Montevideo y querés una casa agradable, con toda la calidez de los uruguayos, no podés estar en otro lado: una casa estilo boutique, de mucho encanto e historia.”</blockquote><figcaption>Juan R. <span class="stars" aria-hidden="true">★★★★★</span></figcaption></figure>
+  <div class="ed-more"><figure><p>“El hotel es muy lindo, la casa está muy bien refaccionada y decorada con muy buen gusto, estaba todo impecable. El desayuno estaba delicioso.”</p><b>mjmonterop</b></figure><figure><p>“Más que un simple lugar donde hospedarse, Casa Roberto es una experiencia estética. Cada detalle está pensado. Buen gusto, diseño, arte.”</p><b>pardomcl</b></figure></div>
+</div></section>
+<section id="contacto" class="ed-contact"><div class="wrap"><h2>Reservas</h2></div>
+  <div class="ed-mapwrap"><div class="map"><iframe loading="lazy" title="Mapa de Casa Roberto" src="https://www.google.com/maps?q=-34.9095274%2C-56.1906839&output=embed"></iframe></div><div class="ed-card"><div class="rows"><div class="row"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><div>Maldonado 1159, Montevideo<br><a href="https://www.google.com/maps/place/Casa+Roberto/data=!4m2!3m1!1s0x959f81cdc3ae5069:0x116e6303a52cca92" target="_blank" rel="noopener">Abrir en Google Maps</a></div></div>
+<div class="row"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><div><a href="tel:+59829032507">2903 2507</a></div></div></div><p class="note"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Llamanos para consultar disponibilidad.</span></p></div></div>
+</section>
+<section class="ed-close"><div class="wrap"><h2>¿Buscás algo especial en Montevideo?</h2><p>Llamanos y reservá tu habitación en Casa Roberto.</p><a class="btn btn-main" href="tel:+59829032507"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span>Llamar para reservar</span></a></div></section>
+</main>
+<footer class="ft "><div class="wrap"><span>© 2026 Casa Roberto, Montevideo</span><span>Maldonado 1159, Montevideo</span></div></footer>
+</div>
+<a class="float" href="tel:+59829032507" aria-label="Llamar"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></a>
+</body>
+</html>
